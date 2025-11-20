@@ -48,6 +48,15 @@ dependencies {
     implementation(kotlin("stdlib"))
 }
 
+// Configure IntelliJ Platform plugin verification
+intellijPlatform {
+    pluginVerification {
+        ides {
+            recommended()
+        }
+    }
+}
+
 // If you have tasks like patchPluginXml, signPlugin, or publishPlugin,
 // you’ll want to revisit them – 2.x reorganizes some tasks into sub-plugins.
 // For a simple plugin, though, you can often omit them or keep them minimal.
