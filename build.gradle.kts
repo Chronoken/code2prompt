@@ -1,14 +1,14 @@
 plugins {
     // Standard Java/Kotlin
     id("java")
-    id("org.jetbrains.kotlin.jvm") version "2.1.20"
+    id("org.jetbrains.kotlin.jvm") version "2.2.21"
 
     // IntelliJ Platform Gradle Plugin 2.x
-    id("org.jetbrains.intellij.platform") version "2.2.1"
+    id("org.jetbrains.intellij.platform") version "2.10.4"
 }
 
 group = "com.code2prompt"
-version = "1.0.3" // Updated version
+version = "1.0.3.2" // Updated version
 
 // If you’re using gradle.properties for platformType and platformVersion, e.g.:
 //   platformType=IC
@@ -64,7 +64,7 @@ tasks {
 
     patchPluginXml {
         sinceBuild.set("251") // Keep compatible with older versions if desired
-        untilBuild.set("252.*") // Set upper bound to 2025.1 branch
+        untilBuild.set("253.*") // Set upper bound to 2025.3 branch (Rider 2025.3)
     }
 
     signPlugin {
